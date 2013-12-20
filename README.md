@@ -14,5 +14,5 @@ Execution
 =========
 
 ```
-java -cp /path/to/phpdbg-ui/dist/libs -jar /path/to/phpdbg-ui/dist/phpdbg-ui.jar
+java -cp /path/to/phpdbg-ui/dist/lib -jar /path/to/phpdbg-ui/dist/phpdbg-ui.jar
 ```
