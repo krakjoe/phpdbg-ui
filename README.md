@@ -3,7 +3,7 @@ phpdbg-ui
 
 phpdbg remote console client:
 
-[![phpdbg-ui](https://github.com/krakjoe/phpdbg-ui/blob/master/assets/java-example-big.png)](https://travis-ci.org/krakjoe/phpdbg-ui)
+[![phpdbg-ui](https://raw.github.com/krakjoe/phpdbg-ui/master/assets/java-example-big.png)](https://travis-ci.org/krakjoe/phpdbg-ui)
 
 Requirements
 ============
