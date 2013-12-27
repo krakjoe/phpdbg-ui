@@ -70,4 +70,24 @@
     nbproject/build-impl.xml file. 
 
     -->
+        
+    <property environment="env" />
+    
+    <taskdef name="bundleapp"
+             classname="com.oracle.appbundler.AppBundlerTask"   
+             classpath="vendor/appbundler-1.0.jar" />
+
+    <target name="bundle-phpdbg-ui">
+        <bundleapp outputdirectory="dist"
+                   name="phpdbg-ui"
+                   displayname="phpdbg UI"
+                   identifier="phpdbg.ui.JConsole"
+                   mainclassname="phpdbg.ui.JConsole">
+            <runtime dir="${env.JAVA_HOME}" />
+            <classpath dir="dist/">
+                <include name="*.jar" />
+                <include name="lib/*.jar" />
+            </classpath>
+        </bundleapp>
+    </target>        
 </project>
