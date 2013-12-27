@@ -81,6 +81,7 @@
         <bundleapp outputdirectory="dist"
                    name="phpdbg-ui"
                    displayname="phpdbg UI"
+                   icon="src/phpdbg/ui/logo-icon.icns"
                    identifier="phpdbg.ui.JConsole"
                    mainclassname="phpdbg.ui.JConsole">
             <runtime dir="${env.JAVA_HOME}" />
@@ -88,6 +89,7 @@
                 <include name="*.jar" />
                 <include name="lib/*.jar" />
             </classpath>
+            <option value="-Xdock:icon=$APP_ROOT/Contents/Resources/logo-icon.icns" />
         </bundleapp>
     </target>        
 </project>
