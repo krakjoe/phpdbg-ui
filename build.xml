@@ -70,4 +70,31 @@
     nbproject/build-impl.xml file. 
 
     -->
+        
+    <property environment="env" />
+    
+    <taskdef name="bundleapp"
+             classname="com.oracle.appbundler.AppBundlerTask"   
+             classpath="vendor/appbundler-1.0.jar" />
+
+    <target name="bundle-phpdbg-ui">
+        <bundleapp outputdirectory="dist"
+                   name="phpdbg-ui"
+                   displayname="phpdbg UI"
+                   icon="src/phpdbg/ui/logo-icon.icns"
+                   identifier="phpdbg.ui.JConsole"
+                   mainclassname="phpdbg.ui.JConsole">
+            <runtime dir="${env.JAVA_HOME}" />
+            <classpath dir="dist/">
+                <include name="*.jar" />
+                <include name="lib/*.jar" />
+            </classpath>
+            <option value="-Xdock:icon=$APP_ROOT/Contents/Resources/logo-icon.icns" />
+            <option value="-Dapple.laf.useScreenMenuBar=true" />
+            <option value="-Dcom.apple.macos.use-file-dialog-packages=true" />
+            <option value="-Dcom.apple.macos.useScreenMenuBar=true" />
+            <option value="-Dapple.awt.application.name=phpdbg UI" />
+            <option value="-Dcom.apple.smallTabs=true" />
+        </bundleapp>
+    </target>        
 </project>
