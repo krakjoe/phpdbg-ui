@@ -90,6 +90,11 @@
                 <include name="lib/*.jar" />
             </classpath>
             <option value="-Xdock:icon=$APP_ROOT/Contents/Resources/logo-icon.icns" />
+            <option value="-Dapple.laf.useScreenMenuBar=true" />
+            <option value="-Dcom.apple.macos.use-file-dialog-packages=true" />
+            <option value="-Dcom.apple.macos.useScreenMenuBar=true" />
+            <option value="-Dapple.awt.application.name=phpdbg UI" />
+            <option value="-Dcom.apple.smallTabs=true" />
         </bundleapp>
     </target>        
 </project>
